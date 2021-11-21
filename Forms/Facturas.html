@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS/Facturas.js"></script>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Lista de Facturas</h3>
+                </div>
+                <div class="col-6">
+                </div>
+            </div>
+        </div>
+        <div class="box-body"></div>
+        <div class="table table-responsive"></div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NUMERO FACTURA</th>
+                    <th>ID SOCIO</th>
+                    <th>FECHA DE FACTURA</th>
+                    <th>DETALLE</th>
+                    <th>SUBTOTAL</th>
+                    <th>ISV</th>
+                    <th>TOTAL</th>
+                    <th>FECHA DE VENCIMIENTO</th>
+                    <th>ESTADO</th>
+                </tr>
+            </thead>
+            <tbody class="Facturas">
+            </tbody>
+        </table>
+        <div class="Formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Agregar Facturas</h3>
+                </div>
+                <div class="col-12">
+                    <form class="Factura">
+                        <label for="">ID</label>
+                        <input type="text" id="ID" class="form-control" placeholder="Ingrese su ID">
+                        <label for="">NUMERO DE FACTURA</label>
+                        <input type="text" id="numerofactura" class="form-control" placeholder="Ingrese su ID_SOCIO">
+                        <label for="">ID DE SOCIO</label>
+                        <input type="text" id="Idsocio" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
+                        <label for="">FECHA DE FACTURA</label>
+                        <input type="text" id="FechaFactura" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
+                        <label for="">DETALLE</label>
+                        <input type="text" id="Detalle" class="form-control" placeholder="Ingrese el DETALLE">
+                        <label for="">SUBTOTAL</label>
+                        <input type="text" id="Subtotal" class="form-control" placeholder="Ingrese el SUB_TOTAL">
+                        <label for="">TOTAL DE ISV</label>
+                        <input type="text" id="Totalisv" class="form-control" placeholder="Ingrese el TOTAL_ISV">
+                        <label for="">TOTAL</label>
+                        <input type="text" id="Total" class="form-control" placeholder="Ingrese el TOTAL">
+                        <label for="">FECHA DE VENCIMIENTO</label>
+                        <input type="text" id="FechaVencimiento" class="form-control"
+                            placeholder="Ingrese la FECHA_ENTREGA">
+                        <label for="">ESTADO</label>
+                        <input type="text" id="estado" class="form-control" placeholder="Ingrese el ESTADO">
+                        <hr>
+                        <div class="button">
+                            <input type="submit" id="btnAgregar" onclick="AgregarFactura()" value="Ingresar Factura"
+                                class="btn btn-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
