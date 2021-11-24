@@ -1,8 +1,8 @@
-var UrlGetFacturas = 'http://localhost:90/G10_19/controller/facturas.php?op=GetFacturas';
-var UrlPostFacturas ='http://localhost:90/G10_19/controller/facturas.php?op=InsertFacturas';
-var UrlDeleteFacturas ='http://localhost:90/G10_19/controller/facturas.php?op=EliminarFacturas';
-var UrlGetUno = 'http://localhost:90/G10_19/controller/facturas.php?op=GetUno';
-var UrlPutFacturas = 'http://localhost:90/G10_19/controller/facturas.php?op=UpdateFacturas';
+var UrlGetFacturas = 'http://34.68.196.220:90/G10_19/Facturas/controller/facturas.php?op=GetFacturas';
+var UrlPostFacturas ='http://34.68.196.220:90/G10_19/Facturas/controller/facturas.php?op=InsertFacturas';
+var UrlDeleteFacturas ='http://34.68.196.220:90/G10_19/Facturas/controller/facturas.php?op=EliminarFacturas';
+var UrlGetUno = 'http://34.68.196.220:90/G10_19/Facturas/controller/facturas.php?op=GetUno';
+var UrlPutFacturas = 'http://34.68.196.220:90/G10_19/Facturas/controller/facturas.php?op=UpdateFacturas';
 
 $(document).ready(function(){
     CargarFacturas();
@@ -43,7 +43,7 @@ function AgregarFactura(){
         ID: $('#ID').val(), 
         NUMERO_FACTURA: $('#numerofactura').val(),
         ID_SOCIO:$("#Idsocio").val(),
-        FECHA_Factura: $('#FechaFactura').val(),
+        FECHA_FACTURA: $('#FechaFactura').val(),
         DETALLE: $('#Detalle').val(),
        SUB_TOTAL: $('#Subtotal').val(),
         TOTAL_ISV: $('#Totalisv').val(),
