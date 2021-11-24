@@ -1,8 +1,8 @@
-var UrlGetArticulos = 'http://localhost:80/G10_19_Proyecto_APIS_IIIPAC/Articulos/controller/articulos.php?op=GetArticulos';
-var UrlPostArticulos = 'http://localhost:80/G10_19_Proyecto_APIS_IIIPAC/Articulos/controller/articulos.php?op=InsertArtuculos';
-var UrlGetArticulo = 'http://localhost:80/G10_19_Proyecto_APIS_IIIPAC/Articulos/controller/articulos.php?op=GetUno';
-var UrlPutArticulos = 'http://localhost:80/G10_19_Proyecto_APIS_IIIPAC/Articulos/controller/articulos.php?op=UpdateArticulos';
-var UrlDeleteArticulo = 'http://localhost:80/G10_19_Proyecto_APIS_IIIPAC/Articulos/controller/articulos.php?op=EliminarArticulos';
+var UrlGetArticulos = 'http://34.68.196.220:90/G10_19/Articulos/controller/articulos.php?op=GetArticulos';
+var UrlPostArticulos = 'http://34.68.196.220:90/G10_19/Articulos/controller/articulos.php?op=InsertArtuculos';
+var UrlGetArticulo = 'http://34.68.196.220:90/G10_19/Articulos/controller/articulos.php?op=GetUno';
+var UrlPutArticulos = 'http://34.68.196.220:90/G10_19/Articulos/controller/articulos.php?op=UpdateArticulos';
+var UrlDeleteArticulo = 'http://34.68.196.220:90/G10_19/Articulos/controller/articulos.php?op=EliminarArticulos';
 
 $(document).ready(function() {
     CargarArticulos();
