@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 
-<body>
+<body style="background: linear-gradient(to bottom, #ccffff 92%, #ccffff 92%)">
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar navbar-dark bg-primary">
             <div class="container-fluid">
@@ -48,67 +48,72 @@
         </nav>
     </header>
     <div class="container">
-        <div class="consulta mt-4">
-            <div class="row">
-                <div class="col-6">
-                    <h3>Lista de Facturas</h3>
-                </div>
-                <div class="col-6">
+        <div style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+            <div class="consulta mt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="p-3 mb-2 bg-dark text-white text-center">Lista de Facturas</h3>
+                    </div>
+                    <div class="col-12">
+                    </div>
                 </div>
             </div>
+            <div class="box-body"></div>
+            <div class="table table-responsive"></div>
+            <table class="table table-sm">
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NUMERO FACTURA</th>
+                        <th>ID SOCIO</th>
+                        <th>FECHA DE FACTURA</th>
+                        <th>DETALLE</th>
+                        <th>SUBTOTAL</th>
+                        <th>ISV</th>
+                        <th>TOTAL</th>
+                        <th>FECHA DE VENCIMIENTO</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody class="Facturas">
+                </tbody>
+            </table>
         </div>
-        <div class="box-body"></div>
-        <div class="table table-responsive"></div>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>NUMERO FACTURA</th>
-                    <th>ID SOCIO</th>
-                    <th>FECHA DE FACTURA</th>
-                    <th>DETALLE</th>
-                    <th>SUBTOTAL</th>
-                    <th>ISV</th>
-                    <th>TOTAL</th>
-                    <th>FECHA DE VENCIMIENTO</th>
-                    <th>ESTADO</th>
-                </tr>
-            </thead>
-            <tbody class="Facturas">
-            </tbody>
-        </table>
         <div class="Formulario">
-            <div class="row">
-                <div class="col-12">
-                    <h3>Agregar Facturas</h3>
-                </div>
-                <div class="col-12">
-                    <form class="Factura">
-                        <label for="">ID</label>
-                        <input type="text" id="ID" class="form-control" placeholder="Ingrese su ID">
-                        <label for="">NUMERO DE FACTURA</label>
-                        <input type="text" id="numerofactura" class="form-control" placeholder="Ingrese su ID_SOCIO">
-                        <label for="">ID DE SOCIO</label>
-                        <input type="text" id="Idsocio" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
-                        <label for="">FECHA DE FACTURA</label>
-                        <input type="text" id="FechaFactura" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
-                        <label for="">DETALLE</label>
-                        <input type="text" id="Detalle" class="form-control" placeholder="Ingrese el DETALLE">
-                        <label for="">SUBTOTAL</label>
-                        <input type="text" id="Subtotal" class="form-control" placeholder="Ingrese el SUB_TOTAL">
-                        <label for="">TOTAL DE ISV</label>
-                        <input type="text" id="Totalisv" class="form-control" placeholder="Ingrese el TOTAL_ISV">
-                        <label for="">TOTAL</label>
-                        <input type="text" id="Total" class="form-control" placeholder="Ingrese el TOTAL">
-                        <label for="">FECHA DE VENCIMIENTO</label>
-                        <input type="text" id="FechaVencimiento" class="form-control" placeholder="Ingrese la FECHA_ENTREGA">
-                        <label for="">ESTADO</label>
-                        <input type="text" id="estado" class="form-control" placeholder="Ingrese el ESTADO">
-                        <hr>
-                        <div class="button">
-                            <input type="submit" id="btnAgregar" onclick="AgregarFactura()" value="Ingresar Factura" class="btn btn-success">
-                        </div>
-                    </form>
+            <div style="background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="p-3 mb-2 bg-dark text-white text-center">Agregar Facturas</h3>
+                    </div>
+                    <div class="col-12">
+                        <form class="Factura">
+                            <label for="">ID</label>
+                            <input type="text" id="ID" class="form-control" placeholder="Ingrese su ID">
+                            <label for="">NUMERO DE FACTURA</label>
+                            <input type="text" id="numerofactura" class="form-control" placeholder="Ingrese su ID_SOCIO">
+                            <label for="">ID DE SOCIO</label>
+                            <input type="text" id="Idsocio" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
+                            <label for="">FECHA DE FACTURA</label>
+                            <input type="text" id="FechaFactura" class="form-control" placeholder="Ingrese La FECHA_PEDIDO">
+                            <label for="">DETALLE</label>
+                            <input type="text" id="Detalle" class="form-control" placeholder="Ingrese el DETALLE">
+                            <label for="">SUBTOTAL</label>
+                            <input type="text" id="Subtotal" class="form-control" placeholder="Ingrese el SUB_TOTAL">
+                            <label for="">TOTAL DE ISV</label>
+                            <input type="text" id="Totalisv" class="form-control" placeholder="Ingrese el TOTAL_ISV">
+                            <label for="">TOTAL</label>
+                            <input type="text" id="Total" class="form-control" placeholder="Ingrese el TOTAL">
+                            <label for="">FECHA DE VENCIMIENTO</label>
+                            <input type="text" id="FechaVencimiento" class="form-control" placeholder="Ingrese la FECHA_ENTREGA">
+                            <label for="">ESTADO</label>
+                            <input type="text" id="estado" class="form-control" placeholder="Ingrese el ESTADO">
+                            <hr>
+                            <div class="button">
+                                <input type="submit" id="btnAgregar" onclick="AgregarFactura()" value="Ingresar Factura" class="btn btn-success">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

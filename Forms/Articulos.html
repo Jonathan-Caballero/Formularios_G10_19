@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body style="background: linear-gradient(to bottom, #ccffff 92%, #ccffff 92%)">
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar navbar-dark bg-primary">
             <div class="container-fluid">
@@ -49,69 +49,74 @@
         </nav>
     </header>
     <div class="container">
-        <div class="consulta">
-            <div class="row">
-                <div class="col9">
-                    <h2>Lista de Articulos</h2>
+        <div style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+            <div class="consulta">
+                <div class="row">
+                    <div class="col9">
+                        <h2 class="p-3 mb-2 bg-dark text-white text-center">Lista de Articulos</h2>
+                    </div>
+                    <div class="col9">
+                    </div>
                 </div>
-                <div class="col9">
-                </div>
-            </div>
 
-            <div class="box-body">
-                <div class="table table-responsive">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>DESCRIPCION</th>
-                                <th>UNIDAD</th>
-                                <th>COSTO</th>
-                                <th>PRECIO</th>
-                                <th>APLICA_ISV</th>
-                                <th>PORCENTAJE_ISV</th>
-                                <th>ESTADO</th>
-                                <th>ID_SOCIO</th>
-                            </tr>
-                        </thead>
-                        <tbody class="articulos">
+                <div class="box-body">
+                    <div class="table table-responsive">
+                        <table class="table table-sm">
+                            <caption></caption>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>DESCRIPCION</th>
+                                    <th>UNIDAD</th>
+                                    <th>COSTO</th>
+                                    <th>PRECIO</th>
+                                    <th>APLICA_ISV</th>
+                                    <th>PORCENTAJE_ISV</th>
+                                    <th>ESTADO</th>
+                                    <th>ID_SOCIO</th>
+                                </tr>
+                            </thead>
+                            <tbody class="articulos">
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="formulario">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Agregar Articulo</h2>
-                </div>
-                <div class="col-12">
-                    <form class="articulo">
-                        <label for="">ID</label>
-                        <input type="text" id="ID" class="form-control" placeholder="Ingrese su ID">
-                        <label for="">ID Socio</label>
-                        <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese su ID de Socio">
-                        <label for="">Descripción</label>
-                        <input type="text" id="DESCRIPCION" class="form-control" placeholder="Ingrese su Descripcion">
-                        <label for="">Unidad</label>
-                        <input type="text" id="UNIDAD" class="form-control" placeholder="Ingrese sus Unidades">
-                        <label for="">Costo</label>
-                        <input type="text" id="COSTO" class="form-control" placeholder="Ingrese el costo">
-                        <label for="">Precio</label>
-                        <input type="text" id="PRECIO" class="form-control" placeholder="Ingrese el precio">
-                        <label for="">Aplica ISV</label>
-                        <input type="text" id="APLICA_ISV" class="form-control" placeholder="Ingrese si aplica ISV (S/N)">
-                        <label for="">Porcentaje del ISV</label>
-                        <input type="text" id="PORCENTAJE_ISV" class="form-control" placeholder="Ingrese el valor del ISV">
-                        <label id="lbEstado" style="display:none" ; for="">Estado</label>
-                        <input id="ESTADO" type="text" style="display:none" ; class="form-control" placeholder="Ingrese el Estado del articulo (A/I)">
-                        <hr>
-                        <div class="button">
-                            <input type="submit" id="btnagregar" onclick="AgregarArticulo()" value="Agregar Articulo" class="btn btn-success">
-                        </div>
-                        <hr>
-                    </form>
+            <div style="background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="p-3 mb-2 bg-dark text-white text-center">Agregar Articulo</h2>
+                    </div>
+                    <div class="col-12">
+                        <form class="articulo">
+                            <label for="">ID</label>
+                            <input type="text" id="ID" class="form-control" placeholder="Ingrese su ID">
+                            <label for="">ID Socio</label>
+                            <input type="text" id="ID_SOCIO" class="form-control" placeholder="Ingrese su ID de Socio">
+                            <label for="">Descripción</label>
+                            <input type="text" id="DESCRIPCION" class="form-control" placeholder="Ingrese su Descripcion">
+                            <label for="">Unidad</label>
+                            <input type="text" id="UNIDAD" class="form-control" placeholder="Ingrese sus Unidades">
+                            <label for="">Costo</label>
+                            <input type="text" id="COSTO" class="form-control" placeholder="Ingrese el costo">
+                            <label for="">Precio</label>
+                            <input type="text" id="PRECIO" class="form-control" placeholder="Ingrese el precio">
+                            <label for="">Aplica ISV</label>
+                            <input type="text" id="APLICA_ISV" class="form-control" placeholder="Ingrese si aplica ISV (S/N)">
+                            <label for="">Porcentaje del ISV</label>
+                            <input type="text" id="PORCENTAJE_ISV" class="form-control" placeholder="Ingrese el valor del ISV">
+                            <label id="lbEstado" style="display:none" ; for="">Estado</label>
+                            <input id="ESTADO" type="text" style="display:none" ; class="form-control" placeholder="Ingrese el Estado del articulo (A/I)">
+                            <hr>
+                            <div class="button">
+                                <input type="submit" id="btnagregar" onclick="AgregarArticulo()" value="Agregar Articulo" class="btn btn-success">
+                            </div>
+                            <hr>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
