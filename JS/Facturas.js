@@ -29,7 +29,7 @@ function CargarFacturas(){
                     '<td>'+MiItems[i].ESTADO+'</td>'+
                     '<td>'+
                     '<button class= "btn btn-warning" onclick= "CargarFactura('+MiItems[i].ID +')">Editar</button>'+
-                    '<button class= "btn btn-outline-danger" onclick="EliminarFactura('+MiItems[i].ID +')">Eliminar</button>'+
+                    '<button class= "btn btn-danger" onclick="EliminarFactura('+MiItems[i].ID +')">Eliminar</button>'+
                     '</td>'+
                     '</tr>';
                     $('.Facturas').html(Valores);

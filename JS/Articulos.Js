@@ -29,8 +29,8 @@ function CargarArticulos() {
                     '<td>' + MiItems[i].ESTADO + '</td>' +
                     '<td>' + MiItems[i].ID_SOCIO + '</td>' +
                     '<td>' +
-                    '<button class="btn btn-outline-warning" onclick="CargarArticulo(' + MiItems[i].ID + ')">Editar</button>' +
-                    '<button class="btn btn-outline-danger" onclick="EliminarArticulo(' + MiItems[i].ID + ')">Eliminar</button>' +
+                    '<button class="btn btn-warning" onclick="CargarArticulo(' + MiItems[i].ID + ')">Editar</button>' +
+                    '<button class="btn btn-danger" onclick="EliminarArticulo(' + MiItems[i].ID + ')">Eliminar</button>' +
                     '</td>' +
                     '</tr>';
                 $('.articulos').html(Valores);
